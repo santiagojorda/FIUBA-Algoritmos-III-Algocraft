@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="pantalla" maxHeight="550.0" maxWidth="1000.0" minHeight="550.0" minWidth="1000.0" onKeyPressed="#moverJugadorConTeclas" prefHeight="550.0" prefWidth="1000.0" style="-fx-background-color: #606060;" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.JuegoControlador">
+    <children>
+        <AnchorPane prefHeight="550.0" prefWidth="424.0" style="-fx-background-color: #606060;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Button fx:id="botonMoverArriba" alignment="CENTER" contentDisplay="CENTER" layoutX="174.0" layoutY="14.0" mnemonicParsing="false" onAction="#moverArribaJugador" prefHeight="27.0" prefWidth="91.0" style="-fx-background-color: #212121; -fx-label-padding: 2;" text="Arriba" textFill="WHITE">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                </Button>
+                <Button fx:id="botonMoverAbajo" alignment="CENTER" contentDisplay="CENTER" layoutX="175.0" layoutY="47.0" mnemonicParsing="false" onAction="#moverAbajoJugador" prefHeight="27.0" prefWidth="89.0" style="-fx-background-color: #212121; -fx-label-padding: 2;" text="Abajo" textFill="WHITE">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                </Button>
+                <Button fx:id="botonMoverDerecha" alignment="CENTER" contentDisplay="CENTER" layoutX="275.0" layoutY="47.0" mnemonicParsing="false" onAction="#moverDerechaJugador" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #212121; -fx-label-padding: 2;" text="Derecha" textFill="WHITE">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                </Button>
+                <Button fx:id="botonMoverIzquierda" alignment="CENTER" contentDisplay="CENTER" layoutX="79.0" layoutY="47.0" mnemonicParsing="false" onAction="#moverIzquierdaJugador" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #212121; -fx-label-padding: 2;" text="Izquierda" textFill="WHITE">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                </Button>
+                <Canvas fx:id="canvasMesaCrafteo" height="150.0" layoutX="145.0" layoutY="125.0" width="150.0" />
+                <Button fx:id="botonEquiparItem" alignment="CENTER" contentDisplay="CENTER" layoutX="303.0" layoutY="426.0" mnemonicParsing="false" onAction="#equiparItem" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #212121; -fx-label-padding: 2;" text="Equipar" textFill="WHITE">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Button>
+                <Button fx:id="botonMusica" alignment="CENTER" contentDisplay="CENTER" layoutX="156.0" layoutY="82.0" minWidth="30.0" mnemonicParsing="false" onAction="#musicalizar" prefHeight="30.0" prefWidth="127.0" style="-fx-background-color: #212121; -fx-label-padding: 2;" text="Apagar sonido" textFill="WHITE">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Button>
+                <Text fill="#f8f8f8" strokeType="OUTSIDE" strokeWidth="0.0" text=" Controles" wrappingWidth="93.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Text>
+                <Text fill="#fcfcfc" strokeType="OUTSIDE" strokeWidth="0.0" text="Zona de Crafteo">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Text>
+                <Canvas fx:id="canvasInventario" height="120.0" layoutX="104.0" layoutY="290.0" width="318.0" />
+                <Label fx:id="label" alignment="CENTER" layoutX="28.0" layoutY="466.0" prefHeight="70.0" prefWidth="360.0" style="-fx-background-color: #212121; -fx-padding: 10;" textAlignment="CENTER" textFill="#e4dada" />
+            </children>
+        </AnchorPane>
+        <Canvas fx:id="canvasTablero" height="550.0" width="550.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    </children>
+</AnchorPane>

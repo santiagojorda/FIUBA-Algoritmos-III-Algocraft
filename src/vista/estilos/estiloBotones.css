@@ -1,0 +1,9 @@
+.nueva-partida-boton {
+    -fx-text-fill: #fff;
+    -fx-background-color: #12121200;
+    -fx-background-radius: 10;
+}
+
+.nueva-partida-boton:hover {
+    -fx-text-fill: #fdc000;
+}
